@@ -42,6 +42,29 @@ nav {
 .col-lg-4 {
     justify-content: center;
 }
+.footer {
+    bottom: 0;
+    position: absolute;
+    padding: 13px;
+    width: 100%
+}
+
+.footer-text {
+    white-space: nowrap;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.footer-text,
+.footer-text-link {
+    color: #888686
+}
+
+.footer-text-link:hover {
+    color: #888686;
+    text-decoration: none
+}
 
 .connect-telegram {
     display: flex;
