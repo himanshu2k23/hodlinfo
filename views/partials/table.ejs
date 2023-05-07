@@ -1,3 +1,4 @@
+</script>
 <div class="fiat-crypto-table table-responsive" style="margin: 0px auto;">
     <table class="table table-borderless text-center">
       <thead>
@@ -34,13 +35,13 @@
                   class="exchange-logo"><span class="exchange-name " style="text-decoration: none;" >WazirX</span></h4>
             </a></td>
           <td class="align-middle">
-            <h4 class="table-text">₹ 25,42,950</h4>
+            <h4 class="table-text"><%= addCommas(result[0].last) %> </h4>
           </td>
           <td class="align-middle">
-            <h4 class="table-text"><span>₹ 25,20,258 / ₹ 25,42,950</span></h4>
+            <h4 class="table-text"><span> <%= addCommas(result[0].buy) %> / <%= addCommas(result[0].sell) %></span></h4>
           </td>
           <td class="align-middle">
-            <h4 class="table-text color-red">-3.24 %</h4>
+            <h4 <% const diff= (percentageDifference(result[0].sell,result[0].buy)) %> class="table-text color-<%= (diff>0)? 'green' : 'red' %>"><%= diff %>%</h4>
           </td>
           <td class="align-middle">
             <h4 class="table-text color-red">▼ ₹ 85,282</h4>
@@ -49,3 +50,4 @@
       </tbody>
     </table>
   </div>
+  

@@ -38,7 +38,6 @@ const addDatatoMongoDB = async (e) => {
     }
 }
 
-
 //app.
 app.engine('ejs', engine);
 app.set('view engine', 'ejs');
