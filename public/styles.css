@@ -1,7 +1,18 @@
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
 body {
     color: #3dc6c1;
     font-family: 'Oswald', sans-serif;
     font-size: 16px;
+    text-decoration: none;
 }
 
 nav {
@@ -223,6 +234,9 @@ input:checked+.slider:before {
     height: 24px;
     width: 24px;
     border-radius: 50%
+}
+.exchange-name {
+    padding-left: 15px;
 }
 
 @media screen and (min-width:1400px) {
