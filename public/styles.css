@@ -1,0 +1,619 @@
+body {
+    color: #3dc6c1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    padding: 25px 30px 0px;
+}
+
+.text-muted {
+    font-size: 20px;
+}
+
+#logoImage {
+    width: 250px;
+    height: 60px;
+}
+
+.col-lg-4 {
+    justify-content: center;
+}
+
+.connect-telegram {
+    display: flex;
+    justify-content: center;
+    left: auto;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #3dc6c1;
+    color: #f8f9fA;
+    text-align: center;
+    border-radius: 15px;
+    height: 50px;
+    width: 182px;
+    font-weight: bold;
+}
+
+.table-text {
+    white-space: nowrap;
+    align-items: center
+}
+
+.fiat-crypto-table h4 {
+    white-space: nowrap
+}
+
+.fiat-crypto-table td {
+    padding: 6px 3px !important;
+    white-space: nowrap
+}
+
+.theme-dark .fiat-crypto-table {
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+.theme-dark .fiat-crypto-table table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    margin: 0
+}
+
+.theme-dark .fiat-crypto-table th {
+    color: #fff;
+    padding: 0 12px
+}
+
+.theme-dark .fiat-crypto-table th h4 {
+    font-family: Oswald;
+    font-size: 24px;
+    opacity: .45;
+    letter-spacing: 1px;
+    margin: 0 0 -5px
+}
+
+.theme-dark .fiat-crypto-table td {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.theme-dark .fiat-crypto-table td a {
+    color: #fff
+}
+
+.theme-dark .fiat-crypto-table td h4 {
+    font-family: Oswald;
+    font-size: 24px;
+    margin: 0;
+    opacity: 1
+}
+
+.theme-dark .fiat-crypto-table tbody tr {
+    background-color: #2e3241
+}
+
+.theme-dark .fiat-crypto-table tbody td:first-child {
+    border-radius: 10px 0 0 10px
+}
+
+.theme-dark .fiat-crypto-table tbody td:last-child {
+    border-radius: 0 10px 10px 0
+}
+
+.telegram-logo {
+    padding: 3px;
+    height: 1.8em;
+    width: 2em;
+}
+
+.notoggle {
+    padding: 6px 20px;
+    margin: 10px;
+    background-color: #2e3241;
+}
+
+.dropdown-toggle {
+    padding: 6px 20px;
+    margin: 10px;
+    background-color: #2e3241;
+}
+
+.theme-dark {
+    position: absolute;
+    background: #191d28;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-family: Oswald, sans-serif;
+}
+
+.color-green {
+    font-size: 40px;
+    color: #5dC7C2;
+}
+
+.average-heading {
+    font-size: 60px;
+
+}
+
+/* THEME BUTTON */
+.switch {
+    margin-left: auto;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f9fA;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #3dc6c1;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2e3241;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.align-middle {
+    vertical-align: middle !important
+}
+.table-text {
+    white-space: nowrap;
+    align-items: center
+}
+.table-text {
+    font-size: 14px
+}
+.exchange-logo {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%
+}
+
+@media screen and (min-width:1400px) {
+    .fiat-logo {
+        width: 70%
+    }
+}
+
+@media screen and (max-width:960px) {
+
+    .header-button,
+    .header-telegram-button {
+        font-size: 14px;
+        padding: 5px 10px
+    }
+
+    .header-button {
+        margin: 5px
+    }
+
+    .average-header {
+        padding: 20px 0
+    }
+
+    .average-heading {
+        font-weight: 400;
+        font-size: 60px
+    }
+
+    .fiat-logo {
+        width: 100%
+    }
+
+    .average-subText {
+        font-weight: 400;
+        color: #0c0f48;
+        opacity: .45;
+        font-weight: 300;
+        font-size: 12px
+    }
+
+    .subText-heading {
+        font-size: 22px
+    }
+}
+
+@media screen and (max-width:768px) {
+    .right-header {
+        text-align: center
+    }
+
+    .fiat-logo {
+        width: 80%
+    }
+
+    .text-center-xs {
+        text-align: center
+    }
+
+    .padding-row-10-xs {
+        padding: 10x 0
+    }
+
+    .header-telegram {
+        padding: 10px 0;
+        font-size: 24px
+    }
+
+    .header-telegram-heading {
+        padding: 15px 0 10px;
+        font-size: 18px
+    }
+
+    .sub-heading-telegram {
+        padding: 3px 0;
+        font-size: 15px
+    }
+
+    .telegram-logo-tg {
+        height: 20px
+    }
+
+    .arrow {
+        font-size: 10px;
+        margin-top: -2px;
+        margin-right: 3px
+    }
+
+    .average-header {
+        padding: 10px 0
+    }
+
+    .table-text {
+        font-size: 14px
+    }
+
+    .fiat-crypto-table h4 {
+        white-space: nowrap
+    }
+
+    .fiat-crypto-table td {
+        padding: 6px 3px !important;
+        white-space: nowrap
+    }
+
+    .loader-wrapper {
+        margin-top: 40%
+    }
+
+    .progress-bar-wrapper {
+        height: 25px;
+        width: 25px;
+        margin: 10px
+    }
+
+    .average-block {
+        padding-bottom: 15px
+    }
+
+    .average-header-block {
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .average-header-maintext {
+        font-weight: 400;
+        font-size: 14px;
+        white-space: nowrap
+    }
+
+    .average-header-subHeading {
+        font-size: 10px
+    }
+
+    .average-header-subHeading,
+    .average-header-subtext {
+        font-weight: 400;
+        color: #0c0f48;
+        opacity: .45;
+        font-weight: 300;
+        white-space: nowrap
+    }
+
+    .average-header-subtext {
+        font-size: 8px
+    }
+
+    .average-heading {
+        font-weight: 400;
+        font-size: 20px
+    }
+
+    .average-subText {
+        font-weight: 400;
+        color: #0c0f48;
+        opacity: .45;
+        font-weight: 300;
+        font-size: 8px
+    }
+
+    .subText-heading {
+        font-size: 14px
+    }
+
+    .padding-header {
+        padding: 15px
+    }
+
+    .exchange-name {
+        padding-left: 4px
+    }
+
+    .exchange-logo {
+        height: 10px;
+        width: 10px
+    }
+
+    .margin-top-progress-bar {
+        margin-top: 8px
+    }
+
+    .commission-percent {
+        font-size: 8px
+    }
+
+    .fiat-crypto-table {
+        padding: 0 10px !important
+    }
+
+    .fiat-crypto-table th {
+        padding: 0 4px !important
+    }
+
+    .fiat-crypto-table th h4 {
+        font-size: 10px !important
+    }
+}
+
+@media screen and (max-width:415px) {
+    .theme-light {
+        background: #fff;
+        position: relative;
+        min-height: 100vh;
+        color: #0c0f48;
+        font-family: Oswald, sans-serif;
+        font-weight: 300
+    }
+
+    .theme-light .footer {
+        border-top: 2px solid #ddd
+    }
+
+    .theme-light .header-button {
+        color: #0c0f48;
+        background-color: #f8f9fa;
+        border: 0;
+        box-shadow: 0 0 2px #ddd
+    }
+
+    .theme-light .toggle-button-circle {
+        height: 20px;
+        width: 20px;
+        background-color: #bcbcbc;
+        border-radius: 50%
+    }
+
+    .theme-light .slider {
+        background-color: #f8f9fa
+    }
+
+    .theme-light .slider:before {
+        background-color: #3dc6c1
+    }
+
+    .theme-light .slider.round {
+        box-shadow: 0 0 2px #ddd
+    }
+
+    .theme-light .telegram-logo-text:hover {
+        color: #fff !important
+    }
+
+    .theme-light .fiat-crypto-table {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+
+    .theme-light .fiat-crypto-table table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 1em;
+        margin: 0
+    }
+
+    .theme-light .fiat-crypto-table th {
+        color: #0c0f48;
+        padding: 0 12px
+    }
+
+    .theme-light .fiat-crypto-table th h4 {
+        font-family: Oswald;
+        font-size: 15px !important;
+        opacity: .45;
+        letter-spacing: 1px;
+        margin: 0 0 -5px
+    }
+
+    .theme-light .fiat-crypto-table td {
+        color: #0c0f48;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .theme-light .fiat-crypto-table td a {
+        color: #000
+    }
+
+    .theme-light .fiat-crypto-table td h4 {
+        font-family: Oswald;
+        font-size: 14px;
+        margin: 0;
+        opacity: 1
+    }
+
+    .theme-light .fiat-crypto-table tbody tr {
+        background-color: #f8f9fa
+    }
+
+    .theme-light .fiat-crypto-table tbody td:first-child {
+        border-radius: 10px 0 0 10px
+    }
+
+    .theme-light .fiat-crypto-table tbody td:last-child {
+        border-radius: 0 10px 10px 0
+    }
+
+    .theme-dark {
+        position: relative;
+        background: #191d28;
+        min-height: 100vh;
+        color: #fff;
+        font-family: Oswald, sans-serif
+    }
+
+    .theme-dark .average-header-subHeading,
+    .theme-dark .average-subText {
+        color: #fff
+    }
+
+    .theme-dark .footer {
+        border-top: 2px solid #2e3241
+    }
+
+    .theme-dark .header-button {
+        background-color: #2e3241;
+        color: #fff;
+        border: 0
+    }
+
+    .theme-dark .toggle-button-circle {
+        height: 30px;
+        width: 30px;
+        background-color: #3459e6;
+        border-radius: 50%
+    }
+
+    .theme-dark .slider {
+        background-color: #f0f0f0
+    }
+
+    .theme-dark .slider:before {
+        background-color: #3dc6c1
+    }
+
+    .theme-dark input:checked+.slider {
+        background-color: #2e3241
+    }
+
+    .theme-dark .fiat-crypto-table {
+        padding-left: 25px;
+        padding-right: 25px
+    }
+
+    .theme-dark .fiat-crypto-table table {
+        width: 100%;
+        max-width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 1em;
+        margin: 0
+    }
+
+    .theme-dark .fiat-crypto-table th {
+        color: #fff;
+        padding: 0 12px
+    }
+
+    .theme-dark .fiat-crypto-table th h4 {
+        font-family: Oswald;
+        font-size: 15px !important;
+        opacity: .45;
+        letter-spacing: 1px;
+        margin: 0 0 -5px
+    }
+
+    .theme-dark .fiat-crypto-table td {
+        color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px
+    }
+
+    .theme-dark .fiat-crypto-table td a {
+        color: #fff
+    }
+
+    .theme-dark .fiat-crypto-table td h4 {
+        font-family: Oswald;
+        font-size: 14px;
+        margin: 0;
+        opacity: 1
+    }
+
+    .theme-dark .fiat-crypto-table tbody tr {
+        background-color: #2e3241
+    }
+
+    .theme-dark .fiat-crypto-table tbody td:first-child {
+        border-radius: 10px 0 0 10px
+    }
+
+    .theme-dark .fiat-crypto-table tbody td:last-child {
+        border-radius: 0 10px 10px 0
+    }
+}
