@@ -4,6 +4,7 @@ const Currency = require('../models/currency');
 
 function addCommas(cost) {
   cost = parseInt(cost);
+  console.log(cost)
   let options = {
     style: 'currency',
     currency: 'INR',
@@ -19,12 +20,15 @@ const percentageDifference = (newValue, oldValue) => {
 }
 
 
-router.get('', async (req, res) => {
-  const result = await Currency.find({});
-  res.render('../views/home.ejs', { result, addCommas, percentageDifference })
+router.get('/', async (req, res) => {
+  res.redirect('/BTC/INR');
 })
 router.get('/:currency/:inr', async (req, res) => {
   const result = await Currency.find({});
-  res.render('../views/home.ejs', { result, addCommas, percentageDifference })
+  console.log(result[0])
+  const name = `${req.params.currency}/INR`
+  const optedCurrency= await Currency.findOne({name});
+  console.log(optedCurrency);
+  res.render('../views/home.ejs', { result,optedCurrency, addCommas, percentageDifference })
 })
 module.exports = router;

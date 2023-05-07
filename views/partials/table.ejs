@@ -35,13 +35,13 @@
                   class="exchange-logo"><span class="exchange-name " style="text-decoration: none;" >WazirX</span></h4>
             </a></td>
           <td class="align-middle">
-            <h4 class="table-text"><%= addCommas(result[0].last) %> </h4>
+            <h4 class="table-text"><%= addCommas(optedCurrency.last) %> </h4>
           </td>
           <td class="align-middle">
-            <h4 class="table-text"><span> <%= addCommas(result[0].buy) %> / <%= addCommas(result[0].sell) %></span></h4>
+            <h4 class="table-text"><span> <%= addCommas(optedCurrency.buy) %> / <%= addCommas(optedCurrency.sell) %></span></h4>
           </td>
           <td class="align-middle">
-            <h4 <% const diff= (percentageDifference(result[0].sell,result[0].buy)) %> class="table-text color-<%= (diff>0)? 'green' : 'red' %>"><%= diff %>%</h4>
+            <h4 <% const diff= (percentageDifference(optedCurrency.sell,optedCurrency.buy)) %> class="table-text color-<%= (diff>0)? 'green' : 'red' %>"><%= diff %>%</h4>
           </td>
           <td class="align-middle">
             <h4 class="table-text color-red">▼ ₹ 85,282</h4>
